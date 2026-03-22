@@ -12,10 +12,10 @@
   <meta property="og:title" content="Shown Shaiju — Cloud & DevOps Engineer" />
   <meta property="og:description" content="AWS Certified Solutions Architect building real cloud systems. DevRPG: 5-tier EKS platform. Documenting real failures in public." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://shownshaiju.github.io" />
+  <meta property="og:url" content="https://shownshaiju.me" />
 
   <!-- Canonical -->
-  <link rel="canonical" href="https://shownshaiju.github.io" />
+  <link rel="canonical" href="https://shownshaiju.me" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,10 +28,10 @@
       --bg-2:       #0e1117;
       --bg-card:    #111620;
       --border:     #1e2738;
-      --amber:      #f0a500;
-      --amber-dim:  #c47f00;
-      --amber-glow: rgba(240,165,0,0.08);
-      --amber-line: rgba(240,165,0,0.18);
+      --accent:     #3b82f6;
+      --accent-dim: #1d4ed8;
+      --accent-glow: rgba(59,130,246,0.08);
+      --accent-line: rgba(59,130,246,0.22);
       --text:       #e2e8f0;
       --text-dim:   #7a8a9e;
       --text-faint: #3d4f63;
@@ -85,7 +85,7 @@
       width: 600px;
       height: 600px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(240,165,0,0.06) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(59,130,246,0.06) 0%, transparent 70%);
       top: -200px;
       right: -200px;
       pointer-events: none;
@@ -136,7 +136,7 @@
       font-family: var(--font-head);
       font-weight: 800;
       font-size: 15px;
-      color: var(--amber);
+      color: var(--accent);
       letter-spacing: -0.5px;
       text-decoration: none;
     }
@@ -163,7 +163,7 @@
       transition: color 0.2s;
     }
 
-    .nav-links a:hover { color: var(--amber); }
+    .nav-links a:hover { color: var(--accent); }
 
     /* ─── HERO ─── */
     .hero {
@@ -177,7 +177,7 @@
       font-size: 11px;
       letter-spacing: 2.5px;
       text-transform: uppercase;
-      color: var(--amber);
+      color: var(--accent);
       margin-bottom: 20px;
       display: flex;
       align-items: center;
@@ -189,7 +189,7 @@
       display: inline-block;
       width: 28px;
       height: 1px;
-      background: var(--amber);
+      background: var(--accent);
     }
 
     .hero h1 {
@@ -203,7 +203,7 @@
     }
 
     .hero h1 .name-accent {
-      color: var(--amber);
+      color: var(--accent);
       position: relative;
     }
 
@@ -242,9 +242,9 @@
     }
 
     .badge.active {
-      border-color: var(--amber-line);
-      color: var(--amber);
-      background: var(--amber-glow);
+      border-color: var(--accent-line);
+      color: var(--accent);
+      background: var(--accent-glow);
     }
 
     .badge .dot {
@@ -281,17 +281,17 @@
     }
 
     .btn-primary {
-      background: var(--amber);
+      background: var(--accent);
       color: var(--bg);
-      border: 1px solid var(--amber);
+      border: 1px solid var(--accent);
       font-weight: 500;
     }
 
     .btn-primary:hover {
-      background: #ffb800;
-      border-color: #ffb800;
+      background: #60a5fa;
+      border-color: #60a5fa;
       transform: translateY(-1px);
-      box-shadow: 0 4px 20px rgba(240,165,0,0.3);
+      box-shadow: 0 4px 20px rgba(59,130,246,0.3);
     }
 
     .btn-ghost {
@@ -301,8 +301,8 @@
     }
 
     .btn-ghost:hover {
-      border-color: var(--amber-line);
-      color: var(--amber);
+      border-color: var(--accent-line);
+      color: var(--accent);
     }
 
     /* ─── SECTION HEADERS ─── */
@@ -310,7 +310,7 @@
       font-size: 10px;
       letter-spacing: 3px;
       text-transform: uppercase;
-      color: var(--amber);
+      color: var(--accent);
       margin-bottom: 12px;
     }
 
@@ -357,13 +357,13 @@
       transition: border-color 0.2s;
     }
 
-    .stat-card:hover { border-color: var(--amber-line); }
+    .stat-card:hover { border-color: var(--accent-line); }
 
     .stat-card .num {
       font-family: var(--font-head);
       font-size: 28px;
       font-weight: 800;
-      color: var(--amber);
+      color: var(--accent);
       line-height: 1;
       margin-bottom: 4px;
     }
@@ -399,13 +399,13 @@
     }
 
     .project-card:hover {
-      border-color: var(--amber-line);
+      border-color: var(--accent-line);
       transform: translateX(4px);
-      box-shadow: -4px 0 0 var(--amber), 0 8px 32px rgba(0,0,0,0.4);
+      box-shadow: -4px 0 0 var(--accent), 0 8px 32px rgba(0,0,0,0.4);
     }
 
     .project-card:hover::before {
-      background: var(--amber);
+      background: var(--accent);
     }
 
     .project-header {
@@ -429,12 +429,12 @@
       align-items: center;
       gap: 5px;
       font-size: 11px;
-      color: var(--amber);
+      color: var(--accent);
       white-space: nowrap;
       padding: 3px 8px;
-      border: 1px solid var(--amber-line);
+      border: 1px solid var(--accent-line);
       border-radius: 2px;
-      background: var(--amber-glow);
+      background: var(--accent-glow);
     }
 
     .project-desc {
@@ -468,7 +468,7 @@
 
     .project-link {
       font-size: 11px;
-      color: var(--amber);
+      color: var(--accent);
       text-decoration: none;
       letter-spacing: 0.5px;
       transition: opacity 0.2s;
@@ -496,7 +496,7 @@
       transition: border-color 0.2s;
     }
 
-    .stack-item:hover { border-color: var(--amber-line); }
+    .stack-item:hover { border-color: var(--accent-line); }
 
     .stack-name {
       font-size: 12px;
@@ -509,27 +509,27 @@
       letter-spacing: 1px;
     }
 
-    .stack-level.high { color: var(--amber); }
+    .stack-level.high { color: var(--accent); }
     .stack-level.mid  { color: var(--text-dim); }
 
     /* ─── CERT ─── */
     .cert-card {
       background: var(--bg-card);
-      border: 1px solid var(--amber-line);
+      border: 1px solid var(--accent-line);
       border-radius: 4px;
       padding: 28px;
       display: flex;
       align-items: center;
       gap: 24px;
-      background: linear-gradient(135deg, var(--bg-card) 60%, rgba(240,165,0,0.04));
+      background: linear-gradient(135deg, var(--bg-card) 60%, rgba(59,130,246,0.04));
     }
 
     .cert-icon {
       width: 56px;
       height: 56px;
       border-radius: 50%;
-      background: var(--amber-glow);
-      border: 1px solid var(--amber-line);
+      background: var(--accent-glow);
+      border: 1px solid var(--accent-line);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -552,7 +552,7 @@
     }
 
     .cert-body .cert-detail span {
-      color: var(--amber);
+      color: var(--accent);
     }
 
     /* ─── CONTACT ─── */
@@ -575,9 +575,9 @@
     }
 
     .contact-link:hover {
-      border-color: var(--amber-line);
+      border-color: var(--accent-line);
       color: var(--text);
-      background: var(--amber-glow);
+      background: var(--accent-glow);
     }
 
     .contact-icon {
@@ -594,7 +594,7 @@
     }
 
     .contact-link:hover .contact-icon {
-      border-color: var(--amber-line);
+      border-color: var(--accent-line);
     }
 
     .contact-info .c-label {
@@ -623,7 +623,7 @@
     }
 
     footer a {
-      color: var(--amber);
+      color: var(--accent);
       text-decoration: none;
     }
 
@@ -669,7 +669,7 @@
     }
 
     .t-line { display: flex; gap: 10px; }
-    .t-prompt { color: var(--amber); user-select: none; }
+    .t-prompt { color: var(--accent); user-select: none; }
     .t-cmd { color: var(--text); }
     .t-out { color: var(--text-dim); padding-left: 2px; }
     .t-green { color: var(--green); }
@@ -680,7 +680,7 @@
       display: inline-block;
       width: 8px;
       height: 13px;
-      background: var(--amber);
+      background: var(--accent);
       margin-left: 2px;
       vertical-align: middle;
       animation: blink 1.1s step-end infinite;
@@ -694,13 +694,38 @@
     /* ─── SCROLL ANIMATIONS ─── */
     .reveal {
       opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.5s ease, transform 0.5s ease;
+      transform: translateY(16px);
+      animation: fadeUp 0.5s ease forwards;
     }
 
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Stagger delays for sequential sections */
+    .hero .reveal         { animation-delay: 0.1s; }
+    #about .reveal        { animation-delay: 0.15s; }
+    #projects .reveal     { animation-delay: 0.1s; }
+    #stack .reveal        { animation-delay: 0.1s; }
+    #certs .reveal        { animation-delay: 0.1s; }
+    #contact .reveal      { animation-delay: 0.1s; }
+
+    /* Keep .visible class for backwards compat but don't need it */
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ─── PHOTO ─── */
+    .hero-photo {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      border: 2px solid var(--accent-line);
+      object-fit: cover;
+      margin-bottom: 28px;
+      display: block;
+      box-shadow: 0 0 0 4px var(--accent-glow);
     }
 
     /* ─── RESPONSIVE ─── */
@@ -738,15 +763,17 @@
 <div class="container">
   <section class="hero">
     <div>
-      <p class="hero-eyebrow">Cloud & DevOps Engineer — Kerala, India</p>
+      <!-- Replace photo.jpg with your actual photo filename after uploading to repo -->
+      <img src="photo.jpg" alt="Shown Shaiju" class="hero-photo" />
+      <p class="hero-eyebrow">AWS Certified Solutions Architect — Kerala, India</p>
       <h1>
         Hi, I'm<br/>
         <span class="name-accent">Shown Shaiju</span>
       </h1>
       <p class="hero-sub">
-        I build <strong>real cloud systems</strong> and document real failures.<br/>
-        AWS Certified Solutions Architect — Associate.<br/>
-        Currently open to <strong>Cloud Engineer / DevOps / SRE</strong> roles in Bangalore & Hyderabad.
+        <strong>AWS Certified Solutions Architect – Associate (SAA-C03).</strong><br/>
+        I build real cloud systems and document real failures in public.<br/>
+        Open to <strong>Cloud Engineer / DevOps / SRE</strong> roles — full-time, open to relocation across India.
       </p>
       <div class="hero-badges">
         <span class="badge active">
@@ -754,7 +781,7 @@
         </span>
         <span class="badge active">AWS SAA-C03 Certified</span>
         <span class="badge">EKS · Kubernetes · Docker</span>
-        <span class="badge">Kerala → Bangalore</span>
+        <span class="badge">Open to Relocation</span>
       </div>
       <div class="hero-cta">
         <a href="https://github.com/ShownShaiju" target="_blank" rel="noopener" class="btn btn-primary">
@@ -801,17 +828,17 @@
     <div class="about-grid">
       <div class="about-text reveal">
         <p>
-          I'm a final-year <strong>MCA student at Nirmala College, Muvattupuzha</strong> (MGU),
-          graduating mid-2026 — and actively hunting for my first professional Cloud/DevOps role.
+          I'm an <strong>AWS Certified Solutions Architect – Associate</strong> who builds in public —
+          shipping real systems, documenting real failures, and learning out loud.
         </p>
         <p>
-          I passed <strong>AWS Solutions Architect – Associate (SAA-C03)</strong> in roughly
-          3 weeks, self-studying with no mentor, no paid courses — just documentation, first-principles thinking,
-          and a lot of deliberate practice.
+          I passed SAA-C03 in <strong>roughly 3 weeks</strong>, self-studying with no mentor and no paid courses.
+          Just documentation, first-principles thinking, and deliberate practice.
+          Graduating with an MCA from Nirmala College, Muvattupuzha (MGU) in April 2026.
         </p>
         <p>
           My flagship project, <strong>DevRPG</strong>, is a 5-tier cloud-native platform deployed
-          on Amazon EKS. It's not a tutorial follow-along — every failure got debugged and documented.
+          on Amazon EKS. Not a tutorial follow-along — every failure got debugged and documented.
           CrashLoopBackOff at 2AM. EBS CSI driver misconfigurations. OOMKill events.
           Real infrastructure, real problems.
         </p>
@@ -929,13 +956,13 @@
       <div class="stack-item"><span class="stack-name">Docker</span><span class="stack-level high">CORE</span></div>
       <div class="stack-item"><span class="stack-name">Python</span><span class="stack-level high">CORE</span></div>
       <div class="stack-item"><span class="stack-name">Django</span><span class="stack-level mid">WORKING</span></div>
-      <div class="stack-item"><span class="stack-name">Terraform</span><span class="stack-level mid">LEARNING</span></div>
+      <div class="stack-item"><span class="stack-name">Terraform</span><span class="stack-level mid">WORKING</span></div>
       <div class="stack-item"><span class="stack-name">Linux</span><span class="stack-level mid">WORKING</span></div>
-      <div class="stack-item"><span class="stack-name">PostgreSQL</span><span class="stack-level mid">WORKING</span></div>
+      <div class="stack-item"><span class="stack-name">Prometheus</span><span class="stack-level mid">WORKING</span></div>
+      <div class="stack-item"><span class="stack-name">Grafana</span><span class="stack-level mid">WORKING</span></div>
       <div class="stack-item"><span class="stack-name">Redis</span><span class="stack-level mid">WORKING</span></div>
       <div class="stack-item"><span class="stack-name">Nginx</span><span class="stack-level mid">WORKING</span></div>
       <div class="stack-item"><span class="stack-name">Git & GitHub</span><span class="stack-level high">CORE</span></div>
-      <div class="stack-item"><span class="stack-name">Celery</span><span class="stack-level mid">WORKING</span></div>
     </div>
   </section>
 
@@ -951,7 +978,7 @@
           Exam: <span>SAA-C03</span> &nbsp;·&nbsp;
           Passed: <span>February 2026</span> &nbsp;·&nbsp;
           Prep: <span>~3 weeks, self-study, no paid courses</span><br/>
-          Verify: <a href="https://www.credly.com/badges/9e2850a5-6b19-4017-9df5-8858c49b517d" target="_blank" rel="noopener" style="color: var(--amber); text-decoration: none;">credly.com/users/shownshaiju →</a>
+          Verify: <a href="https://www.credly.com/badges/9e2850a5-6b19-4017-9df5-8858c49b517d" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none;">credly.com/users/shownshaiju →</a>
         </div>
       </div>
     </div>
@@ -996,8 +1023,8 @@
     </div>
 
     <p style="margin-top: 32px; font-size: 12px; color: var(--text-dim); line-height: 1.9;">
-      I'm actively looking for <strong style="color: var(--text)">Cloud Engineer / DevOps / SRE</strong> roles based in
-      <strong style="color: var(--text)">Bangalore or Hyderabad</strong>.
+      I'm actively looking for <strong style="color: var(--text)">Cloud Engineer / DevOps / SRE</strong> roles —
+      <strong style="color: var(--text)">full-time, open to relocation across India.</strong>
       If you're hiring or have a referral — I'd love to hear from you.
     </p>
   </section>
@@ -1014,23 +1041,5 @@
 </footer>
 
 <script>
-  // Scroll reveal
-  const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => entry.target.classList.add('visible'), i * 60);
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1 });
-  reveals.forEach(el => observer.observe(el));
-
-  // Trigger hero terminal immediately
-  document.querySelectorAll('.hero .reveal').forEach(el => {
-    setTimeout(() => el.classList.add('visible'), 300);
-  });
+  // No JS animation needed - using CSS keyframe animations
 </script>
-
-</body>
-</html>
